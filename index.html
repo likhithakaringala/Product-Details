@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button {
+            background: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Product Details Webpage</h1>
+
+<div class="product">
+    <h2>Laptop</h2>
+    <p>Price: ₹50,000</p>
+    <p>High-performance laptop for students.</p>
+    <button onclick="showDetails('Laptop')">
+        View Details
+    </button>
+</div>
+
+<div class="product">
+    <h2>Mobile Phone</h2>
+    <p>Price: ₹20,000</p>
+    <p>Smartphone with advanced features.</p>
+    <button onclick="showDetails('Mobile Phone')">
+        View Details
+    </button>
+</div>
+
+<div class="product">
+    <h2>Headphones</h2>
+    <p>Price: ₹2,000</p>
+    <p>Wireless headphones with clear sound.</p>
+    <button onclick="showDetails('Headphones')">
+        View Details
+    </button>
+</div>
+
+<script>
+    function showDetails(product) {
+        alert("You selected: " + product);
+    }
+</script>
+
+</body>
+</html>
